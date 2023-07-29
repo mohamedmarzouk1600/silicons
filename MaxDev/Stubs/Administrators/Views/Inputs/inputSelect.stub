@@ -1,0 +1,7 @@
+                    <x-admin-form-group class="col-sm-6{!! formError($errors,'DummyFiledName',true) !!}">
+                        <x-admin-form-group-wrapper>
+                            {!! Form::label("DummyFiledName", __("DummyFiledLabel").':') !!}
+                            {!! Form::select("DummyNoSingleFiledName",DummyRelationName,isset($row->id) ? $row->DummyFiledName:old("DummyFiledName"),['class'=>'form-control']) !!}
+                        </x-admin-form-group-wrapper>
+                        {!! formError($errors,"DummyFiledName") !!}
+                    </x-admin-form-group>

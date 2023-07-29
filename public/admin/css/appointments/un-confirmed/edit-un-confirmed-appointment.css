@@ -1,0 +1,21 @@
+
+
+.un-appointment-edit .old-appointment {
+    padding: 15px;
+    font-size: 16px;
+}
+
+.un-appointment-edit .old-appointment .old-appointment-heading {
+    margin-bottom: 20px;
+}
+
+.un-appointment-edit .old-appointment .old-appointment-info {
+    color: #fff;
+    font-size: 20px;
+}
+
+.alert-custom-bg-border {
+    border-color: #21a59d !important;
+    background-color: #21a59d !important;
+    color: #fff !important;
+}

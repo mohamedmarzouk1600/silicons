@@ -1,0 +1,29 @@
+<?php
+/**
+ * @author Mohamed Marzouk <mohamedmarzouk1600@gmail.com>
+ * @Copyright Maximum Develop
+ * @FileCreated DummyDateTime
+ * @Contact https://www.linkedin.com/in/mohamed-marzouk-138158125
+ */
+
+namespace MaxDev\Modules\Api\Resource;
+
+use Illuminate\Http\Resources\Json\JsonResource;
+
+class DummyResource extends JsonResource
+{
+
+    /**
+         * Transform the resource into an array.
+         *
+         * @param  \Illuminate\Http\Request  $request
+         * @return array
+         */
+        public function toArray($request)
+        {
+            return [
+                DummySourceItems
+            ];
+        }
+
+}

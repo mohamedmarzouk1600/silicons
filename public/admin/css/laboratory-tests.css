@@ -1,0 +1,40 @@
+
+.create-laboratory-test {
+    display: flex;
+    justify-content: end;
+}
+
+.create-laboratory-test .btn-create-laboratory-test {
+    background: #21a49c !important;
+    border-color: #21a49c !important;
+}
+
+.model-create-laboratory-test {
+    position: absolute;
+    top: 11%;
+    background: #d8dbe0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #404e67;
+    display: none;
+    width: 75%;
+    left: 10%;
+}
+
+.close-model-laboratory-test {
+    text-align: center
+}
+
+.close-model-laboratory-test i.fa-close {
+    margin-bottom: 25px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    background: #00000091;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.select2-container {
+    width: 100% !important;
+}

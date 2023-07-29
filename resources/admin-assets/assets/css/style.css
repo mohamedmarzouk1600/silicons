@@ -1,0 +1,25 @@
+table.table-striped tr:nth-child(even) {
+    background: #f5f7fa;
+}
+
+table.table-striped th {
+    font-weight: bold;
+    background:#d8dbe0;
+}
+
+.navigation-main .nav-item {
+    font-size: medium;
+}
+
+.en {
+    text-align: left;
+    direction: ltr;
+}
+.ar {
+    text-align: right;
+    direction: rtl;
+}
+
+.actions-links a {
+    margin: 3px;
+}

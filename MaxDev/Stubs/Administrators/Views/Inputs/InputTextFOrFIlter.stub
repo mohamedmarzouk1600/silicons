@@ -1,0 +1,6 @@
+                <x-admin-form-group class="m-form__group row">
+                    {{ Form::label('DummyFiledName',__('DummyFiledLabel'), ['class'=>"col-form-label col-lg-3 col-sm-12"]) }}
+                    <div class="col-lg-9 col-md-9 col-sm-12">
+                        {!! Form::text('DummyNoSingleFiledName',null,['class'=>'form-control ','id'=>'DummyFiledName', 'placeholder'=>__('DummyFiledName')]) !!}
+                    </div>
+                </x-admin-form-group>

@@ -1,0 +1,210 @@
+.greencircle {
+    width: 15px;
+    height: 15px;
+    background-color: green;
+}
+.greycircle {
+    width: 15px;
+    height: 15px;
+    background-color: grey;
+}
+.inline {
+    display: inline-flex;
+}
+.search-input-select {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -17px;
+    width: 92%;
+    height: 17%;
+}
+.labelMargin {
+    margin-bottom: 1.5rem;
+}
+.col-center {
+    float:none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-delete-component {
+    padding-top: 29px;
+}
+
+.card-component{
+    max-height: 58vh;
+    overflow-y: auto;
+}
+
+.card-form-nano-clinic {
+    height: 74.1vh;
+}
+
+.nav.nav-tabs.nav-top-border .nav-item a.nav-link.active {
+    border-top: 3px solid #21a59d;
+}
+
+.nav.nav-tabs.nav-top-border .nav-item a {
+    /*color: #21a59d;*/
+}
+
+.app-content {
+    min-height: 90vh
+}
+
+@media (min-width: 2000px) {
+    .app-content {
+        min-height: 91vh !important;
+    }
+}
+
+.table-index-models {
+    margin-bottom: 10px !important;
+}
+
+.show-nano-clinic .card {
+    /*border: 1px solid #404e674a;*/
+    border-radius: 5px;
+}
+
+.show-nano-clinic .card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    color: #fff;
+    background-color: #21a59d;
+    font-size: 20px;
+}
+
+.show-nano-clinic .card-body-address {
+    padding: 15px;
+    color: #404e67;
+}
+
+.show-nano-clinic .card-body-working-shift {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.question-options-component {
+    background: #edeff2;
+    padding: 20px 0;
+    margin-bottom: 15px;
+}
+
+.question-options-component #btn-add-component {
+    margin-bottom: 0;
+}
+
+.content-wizard-call-gp {
+    padding: 0 20px !important;
+}
+
+.questions-nurse-content, .questions-patient-gp-flow-component .questions-patient-content {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.questions-nurse-content .question-text,
+.questions-patient-gp-flow-component .questions-patient-content .question-text {
+    width: 48%;
+}
+
+.questions-nurse-content .question-type-options,
+.questions-patient-gp-flow-component .questions-patient-content .question-type-options,
+.questions-patient-gp-flow-component .questions-patient-content .question-type-checkboxes {
+    padding-left: 25px;
+    padding-top: 5px;
+}
+
+.questions-nurse-content .question-type-options input,
+.questions-patient-gp-flow-component .questions-patient-content .question-type-options input,
+.questions-patient-gp-flow-component .questions-patient-content .question-type-checkboxes input {
+    transform: scale(1.5);
+}
+
+.questions-nurse-content .question-type-options input + label,
+.questions-patient-gp-flow-component .questions-patient-content .question-type-options input + label,
+.questions-patient-gp-flow-component .questions-patient-content .question-type-checkboxes input + label {
+    padding-left: 10px;
+    font-size:18px
+}
+
+.questions-nurse-content .question-type-options span:first-child,
+.questions-nurse-content .question-type-checkboxes span:first-child {
+    padding-right: 30px;
+}
+
+.questions-nurse-content .question-type-text, .questions-patient-gp-flow-component .questions-patient-content .question-type-text {
+    padding: 5px 0 0 30px;
+}
+
+.questions-nurse-content .question-type-text input, .questions-patient-gp-flow-component .questions-patient-content .question-type-text input {
+    width: 100%;
+    padding: 0.7rem 0.5rem !important;
+}
+
+.questions-nurse-content .question-text, .questions-patient-gp-flow-component .questions-patient-content .question-text {
+    padding-top: 20px;
+}
+
+.questions-nurse-content .question-text h5, .questions-patient-gp-flow-component .questions-patient-content .question-text h5 {
+    font-size: 17px;
+    font-weight: bold;
+    color: #404e67;
+    line-height: 25px
+}
+
+.questions-patient-gp-flow-component .action-button{
+    background: #00B5B8;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 5px;
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.call-gp-component-content {
+    /*height: 79vh*/
+}
+
+.heading-elements-toggle {
+    display: none;
+}
+
+.margin-b-t-30 {
+    margin: 30px 0
+}
+
+.display-flex-justify-center {
+    display:flex;
+    justify-content: center;
+}
+
+.display-flex-justify-between {
+    display:flex;
+    justify-content: space-between;
+}
+
+.visits-patients .go-to-questions {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.visits-patients .go-to-questions .btn-questions-gp {
+    background: #404e67;
+    padding: 12px 25px;
+    font-size: 17px;
+    border-radius: 4px;
+}
+
+.visits-patients .go-to-questions .btn-questions-gp a {
+    color: #fff
+}

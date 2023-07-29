@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    height: 100%
+}
+
+p {
+    color: grey
+}
+
+#heading {
+    text-transform: uppercase;
+    color: #21a59d;
+    font-weight: normal
+}
+
+#msform {
+    position: relative;
+    padding: 20px 0;
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+}
+
+.form-card {
+    text-align: left
+}
+
+#msform .action-button {
+    background: #21a59d;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 5px;
+    width: 100%
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 0 10px 5px;
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    background-color: #000000
+}
+
+.card {
+    z-index: 0;
+    border: none;
+    position: relative
+}
+
+.fs-title {
+    font-size: 25px;
+    color: #21a59d;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left
+}
+
+.purple-text {
+    color: #21a59d;
+    font-weight: normal
+}
+
+.steps {
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right
+}
+
+.fieldlabels {
+    color: gray;
+    text-align: left
+}
+
+.wizard-progress-bar {
+    overflow: hidden;
+    color: lightgrey;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0 !important;
+}
+
+.wizard-progress-bar .active {
+    color: #21a59d
+}
+
+.wizard-progress-bar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400
+}
+
+.wizard-progress-bar #appointment:before {
+    font-family: FontAwesome;
+    content: "\1F566"
+}
+
+.wizard-progress-bar #account:before {
+    font-family: FontAwesome;
+    content: "\f13e"
+}
+
+.wizard-progress-bar #questions:before {
+    font-family: FontAwesome;
+    content: "\f007"
+}
+
+.wizard-progress-bar #connect-gp:before {
+    font-family: FontAwesome;
+    content: "\f030"
+}
+
+.wizard-progress-bar #confirm:before {
+    font-family: FontAwesome;
+    content: "\f00c"
+}
+
+.wizard-progress-bar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+}
+
+.wizard-progress-bar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    /*left: 220px;*/
+    top: 25px;
+    z-index: -1
+}
+
+.wizard-progress-bar li:last-child:after {
+    width: 0
+}
+
+.wizard-progress-bar li.active:before,
+.wizard-progress-bar li.active:after {
+    background: #21a59d
+}
+
+.content-wizard-body-call-gp .question-type-long-text {
+    padding: 5px 0 0 30px;
+}
+
+.content-wizard-body-call-gp .question-type-long-text textarea {
+    height: 100px;
+    resize: none;
+}
+
+.progress {
+    height: 20px
+}
+
+.progress-bar {
+    background-color: #21a59d
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+
+.content-wizard-body-call-gp {
+    padding-top: 35px;
+}
+
+.content-wizard-body-call-gp .btn-connect-gp {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.content-wizard-body-call-gp .btn-connect-gp button {
+    background-color: #21a59d !important;
+    color: #FFF;
+    border: #21a59d;
+    font-size: 20px;
+    padding: 15px 60px;
+}
+
+.btn-appointment {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.btn-appointment button {
+    background-color: #21a59d !important;
+    color: #FFF;
+    border: #21a59d;
+    font-size: 20px;
+    padding: 15px 60px;
+}
+
+.card-appointment {
+    width: 8rem;
+}
+
+.container-img-oppointment {
+    height: 30vh
+}
+
+.radio-appointment {
+    transform: scale(1.1);
+    margin-right: 5px;
+}
+
+.inline-appointment {
+    display: inline-flex;
+}
+
+.card-header-appointment {
+    background-color: #21a59d;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+}
+
+
+.content-wizard-body-call-gp .search-patient-content {
+    display: flex;
+    justify-content: center;
+    /*background: #d3d3d3cc;*/
+    background: transparent;
+    padding: 40px 0 28px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.content-wizard-body-call-gp .search-button-patient {
+    /*margin-top: 29px !important;*/
+    width: 100% !important;
+    font-size: 17px;
+}
+
+.content-wizard-body-call-gp .label-search-patient {
+    color: #404e67;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.content-wizard-body-call-gp .search-patient-country-code {
+    padding-top: 32px
+}
+
+.content-wizard-body-call-gp .alert-info{
+    display: flex;
+    justify-content: space-between;
+    color: #0c5460 !important;
+    background-color: #d1ecf1 !important;
+    border-color: #bee5eb !important;
+}
+
+.content-wizard-body-call-gp .alert-success-search-patient {
+    color: #155724 !important;
+}
+
+.content-wizard-body-call-gp .message-error {
+    line-height: 1;
+    margin-top: 5px;
+    color: #d32f2f;
+}
+
+.content-wizard-body-call-gp .register-patient {
+    padding: 15px
+}
+
+.content-wizard-body-call-gp .btns-register-patient {
+    margin-top: 15px;
+}
+
+.container-img-content-clinic {
+    display: flex !important;
+}
+
+.clinic-img {
+    width: 25%;
+}
+
+.container-img-content-clinic .img-appointment {
+    width: 100%;
+    height: 100%;
+}
+
+.container-img-content-clinic .card-body {
+    margin-left: 20px
+}
+
+#qrcode {
+    display: flex;
+}
+
+#logoQR {
+    width: 17%;
+}
+
+
+.content-wizard-body-call-gp .questions-nurse-content .question-type-checkboxes {
+    padding-left: 25px;
+    padding-top: 5px;
+}
+
+.content-wizard-body-call-gp .questions-nurse-content .question-type-checkboxes input {
+    transform: scale(1.5);
+}
+
+.content-wizard-body-call-gp .questions-nurse-content .question-type-checkboxes input + label {
+    padding-left: 10px;
+    font-size:18px
+}
+
+.content-wizard-body-call-gp .question-type-checkboxes span:first-child {
+    padding-right: 30px;
+}
+
+.modal-backdrop
+{
+    position: inherit !important;
+}
+#chargeWallet{
+    margin-top: 15%;
+}
+.form-check-input {
+    margin-left: -0.25rem;
+}
+
+.search-about-patient .register-for {
+    margin: 10px 0
+}
+
+.call-gp-section table {
+    font-size: 17px;
+    margin-bottom: 0;
+}
+
+.call-gp-section table tr {
+    line-height: 43px;
+}
+
+.call-gp-section table tr td:last-child {
+    justify-content: space-between;
+    display: flex;
+}
+
+.call-gp-section table tr td:last-child button {
+    font-size: 16px;
+}
+
+.call-gp-section table tr td.td-call-gp {
+    display: flex;
+    justify-content: center;
+}
+
+.call-gp-section table tr td.td-call-gp-has-error-message {
+    display: block;
+    text-align: center;
+}
+
+.call-gp-section table tr td.td-call-gp-has-error-message .call-gp-content-coupon {
+    display: flex;
+    justify-content: center;
+}
+
+.call-gp-section table tr td.td-call-gp-has-error-message .call-gp-content-coupon input {
+    width: 40%;
+    margin-right: 15px;
+}
+
+.call-gp-section table tr td.td-call-gp-has-error-message .message-error {
+    width: 94%;
+}
+
+.call-gp-section table tr td.td-call-gp input[type='text'] {
+    width: 25%;
+    margin-right: 10px;
+}
+
+.call-gp-section table tr td.td-call-gp button {
+    font-size: 20px;
+    height: 42px;
+}
+
+.call-gp-section table tr.qr-code {
+    display: flex;
+    justify-content: center;
+}
+
+.call-gp-section .qr-code {
+    display: none;
+    padding: 20px;
+    justify-content: center;
+}
+
+.model-charge-wallet .modal-dialog {
+    box-shadow: 1px 1px 10px #0009;
+    border: 0;
+    border-radius: 5px;
+}
+
+.model-charge-wallet .modal-dialog button.close-model-charge-wallet {
+    margin-top: -20px;
+}
+
+
+.questions-nurse-content .medical-profile {
+    border: 1px solid #00a5a8 !important;
+    margin: 0 2px !important;
+    padding: 1em !important;
+    background: #e5e6e6 !important;
+    margin-top: 30px !important;
+}
+
+.questions-nurse-content .medical-profile legend {
+    color: #00b5b8;
+    font-weight: bold;
+    padding: 0 10px;
+    background: #FFF;
+    width: 180px;
+}
+
+.radio-buttons-exists-new-childes {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.radio-buttons-exists-new-childes label {
+    color: #404E67 !important;
+    margin-left: 10px;
+}
+
+.radio-buttons-exists-new-childes input {
+    transform: scale(1.5);
+}
+
+.select-exists-child {
+    padding: 15px
+}

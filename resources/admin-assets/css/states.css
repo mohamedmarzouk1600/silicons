@@ -1,0 +1,131 @@
+
+.charts-home-blade .calls-recommendations {
+    padding: 10px;
+}
+
+.charts-home-blade .recommendation-progress-bar {
+    height: 1.5rem !important;
+    background-color: #EEE;
+    margin: 4px 0 15px 0 !important;
+    color: #404e67;
+}
+
+.charts-home-blade .recommendation-progress-bar .percentage {
+    position: relative;
+    z-index: 99999999;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.charts-home-blade .recommendation-progress-bar .progress-bar {
+    position: relative;
+    padding-left: 10px;
+    height: 100%;
+    bottom: 20px;
+}
+
+.charts-home-blade .media {
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.charts-home-blade .bg-gradient-x-primary {
+    background-image: -webkit-linear-gradient(left,#008385 0,#00E7EB 100%);
+    background-image: linear-gradient(to right,#008385 0,#00E7EB 100%);
+}
+
+.charts-home-blade .bg-gradient-x-warning {
+    background-image: -webkit-linear-gradient(left,#FF864A 0,#FFCAB0 100%);
+    background-image: linear-gradient(to right,#FF864A 0,#FFCAB0 100%);
+}
+
+.charts-home-blade .bg-gradient-x-danger {
+    background-image: -webkit-linear-gradient(left,#FF425C 0,#FFA8B4 100%);
+    background-image: linear-gradient(to right,#FF425C 0,#FFA8B4 100%);
+}
+
+.charts-home-blade .bg-primary.bg-darken-2, .charts-home-blade .btn-primary.btn-darken-2 {
+    background-color: #008385!important;
+}
+
+.charts-home-blade .bg-warning.bg-darken-2, .charts-home-blade .btn-warning.btn-darken-2 {
+    background-color: #FF864A!important;
+}
+
+.charts-home-blade .bg-danger.bg-darken-2, .charts-home-blade .btn-danger.btn-darken-2 {
+    background-color: #FF425C!important;
+}
+
+.charts-home-blade .font-large-2 {
+    font-size: 3.1rem!important;
+}
+
+.charts-home-blade h5 {
+    font-weight: bold !important;
+}
+
+.charts-home-blade #datatable-patients-missed-calls_length {
+    margin-top: 13px;
+}
+
+.charts-home-blade .patients-missed-calls .card-body {
+    padding: 0 10px 5px;
+}
+
+.charts-home-blade .card.card-show-blade {
+    height: 40rem;
+}
+
+.charts-home-blade canvas#all_calls_by_doctors {
+    width: 50rem !important;
+    height: 50rem !important;
+}
+
+.charts-home-blade .data-chart-form {
+    display: flex;
+    margin: 0 20px 45px;
+    justify-content: end;
+}
+
+
+
+.charts-home-blade .data-chart-form input {
+    padding: 5px;
+}
+
+.charts-home-blade .data-chart-form .controls {
+    margin-right: 10px;
+}
+
+.charts-home-blade .data-chart-form .container-submit-input {
+    padding: 0;
+    margin-left: 10px;
+}
+
+.charts-home-blade .data-chart-form .container-submit-input button {
+    padding: 7px;
+}
+
+.charts-home-blade .calls-per-recommendation .card-show-blade,
+.charts-home-blade .patients-missed-calls .card-show-blade,
+.charts-home-blade .all-calls-by-doctors .card-show-blade {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+{
+    width: 6%;
+    height: 100%;
+    bottom: 20px;
+    position: relative;
+}
+
+{
+    position: relative;
+    z-index: 99999999;
+    padding-left: 5px;
+    font-weight: bold;
+}

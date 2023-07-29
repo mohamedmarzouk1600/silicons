@@ -1,0 +1,15 @@
+
+.clock-counter {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    font-size: 20px;
+}
+
+.time-clock-counter {
+    background: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    color: #00A5A8;
+    font-size: 15px;
+}

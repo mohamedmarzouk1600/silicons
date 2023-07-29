@@ -1,0 +1,202 @@
+<?php
+/**
+ * @author Mohamed Marzouk <mohamedmarzouk1600@gmail.com>
+ * @Copyright Maximum Develop
+ * @FileCreated DummyDateTime
+ * @Contact https://www.linkedin.com/in/mohamed-marzouk-138158125
+ */
+
+namespace MaxDev\Modules\Administrators;
+
+use Illuminate\Http\Request;
+use DummyModelNameSpace;
+use MaxDev\Modules\Administrators\Requests\DummyFormRequest;
+use Yajra\DataTables\DataTables;
+ExtraUseClasses
+
+class DummyController extends AdministratorsController
+{
+    public $viewDir = 'admin.DummyCrudName.';
+    public $routePrefix = 'admin.DummyCrudName.';
+    public $resourceName = 'DummyCrudName';
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index(Request $request, DummyService $DummyLoweredModelService)
+    {
+        $this->viewData['title'] = __($this->resourceName);
+        $this->viewData['tableColumns'] = [__('ID'),DummyPhraseFillable,__('Action')];
+        $this->viewData['Cols'] = ['id',DummyFillable,'action'];
+        $this->viewData['buttons'] = $this->template->generateButtons($this->routePrefix, null, 'index');
+
+        if($request->isDataTable){
+            $eloquentData = $DummyLoweredModelService->adminIndex();
+            // Filtering
+            if($request->input('order.0.column') !== false && isset( $this->viewData['Cols'][$request->input('order.0.column')]) ){
+                $column_name=$this->viewData['Cols'][$request->input('order.0.column')];
+                switch ($column_name) {
+DummyCaseFields
+                    default:
+                        $Filterby='id';
+                }
+                if(isset($Filterby))
+                    $eloquentData->orderBy( $Filterby, $request->input('order.0.dir'));
+            }
+            if( $request->created_at1 || $request->created_at2 ){
+                WhereBetween($eloquentData, $request->created_at1, $request->created_at2);
+            }
+
+            // Filtering
+            if($request->id){
+                $eloquentData->where('id',$request->id);
+            }
+
+createFilterByInputsForQuery
+
+            if($request->input('search.value')){
+                $name=$request->input('search.value');
+                $eloquentData->where(function($query)use($name){
+                    $query->where('id',$name)
+DummySearchAllInputsQuery
+                    ;
+                });
+            }
+
+
+            // DataTables
+            return DataTables::of($eloquentData)
+                ->rawColumns(['action'])
+                ->addColumn('id',function($data){
+                    return $data->id;
+                })
+DummyDataTableColumns
+                ->addColumn('action',function($data){
+                    return $this->template->generateRowDropDown([
+                        [
+                            'route' =>  $this->routePrefix.'show',
+                            'url'   =>  route($this->routePrefix.'show',$data->id),
+                            'class' =>  'fa fa-eye',
+                            'text'  =>  __('View'),
+                        ],
+                        [
+                            'route' =>  $this->routePrefix.'edit',
+                            'url'   =>  route($this->routePrefix.'edit',$data->id),
+                            'class' =>  'fa fa-edit',
+                            'text'  =>  __('Edit'),
+                        ],
+                        [
+                            'route' =>  $this->routePrefix.'destroy',
+                            'onclick'   =>  'deleteRecord(\''.route($this->routePrefix.'destroy',$data->id).'\',this)',
+                            'class' =>  'fa fa-trash',
+                            'text'  =>  __('Delete'),
+                        ],
+                    ]);
+                })
+                ->make(true);
+        }
+        RelationObjects
+        return $this->view($this->viewDir.'index');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        $this->viewData['title'] = __('New '.$this->resourceName);
+        $this->viewData['submit'] = __('Add '.$this->resourceName);
+
+        RelationObjects
+        return $this->view($this->viewDir.'form');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(DummyFormRequest $request, DummyService $DummyLoweredModelService)
+    {
+        $RequestedData = $request->validated();
+        if($DummyLoweredModelService->adminCreate($RequestedData)){
+            return $this->WithSuccess($this->routePrefix.'index',__('Successfully added '.$this->resourceName));
+        } else {
+            return $this->WithSuccess($this->routePrefix.'create',__('Couldn\'t add '.$this->resourceName));
+        }
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  \MaxDev\Models\DummyModel  $DummyLoweredModel
+     * @return \Illuminate\Http\Response
+     */
+    public function show(DummyModel $DummyLoweredModel)
+    {
+        $this->viewData['title'] = __('View '.$this->resourceName);
+        $this->viewData['row'] = $DummyLoweredModel;
+        $this->viewData['buttons'] = $this->template->generateButtons($this->routePrefix, $DummyLoweredModel, 'show');
+        return $this->view($this->viewDir.'show');
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \MaxDev\Models\DummyModel  $DummyLoweredModel
+     * @return \Illuminate\Http\Response
+     */
+    public function edit(DummyModel $DummyLoweredModel)
+    {
+        $this->viewData['title'] = __('Edit '.$this->resourceName).' '.$DummyLoweredModel->name;
+        $this->viewData['submit'] = __('Save '.$this->resourceName);
+        $this->viewData['row'] = $DummyLoweredModel;
+        RelationObjects
+        return $this->view($this->viewDir.'form');
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \MaxDev\Models\DummyModel  $DummyLoweredModel
+     * @return \Illuminate\Http\Response
+     */
+    public function update(DummyFormRequest $request, DummyModel $DummyLoweredModel, DummyService $DummyLoweredModelService)
+    {
+        $RequestedData = $request->validated();
+
+        if($DummyLoweredModelService->adminUpdate($RequestedData, $DummyLoweredModel)){
+            return $this->WithSuccess($this->routePrefix.'index',__('Successfully Updated '.$this->resourceName));
+        } else {
+            return $this->WithError([$this->routePrefix.'edit', $DummyLoweredModel->id],__('Could not update '.$this->resourceName));
+        }
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \MaxDev\Models\DummyModel  $DummyLoweredModel
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy(DummyModel $DummyLoweredModel, DummyService $DummyLoweredModelService)
+    {
+        $status = $DummyLoweredModelService->adminDelete($DummyLoweredModel);
+
+        if(request()->ajax()){
+            return response()->json([
+                'type'      =>      (($status)?'success':'error'),
+                'msg'       =>      (($status)?__('Successfully deleted '.$this->resourceName):__('Could not delete '.$this->resourceName)),
+            ]);
+        } else {
+            if($status)
+                return $this->WithSuccess($this->routePrefix.'index',__('Successfully deleted '.$this->resourceName));
+            else
+                return $this->WithError($this->routePrefix.'index',__('Could not delete '.$this->resourceName));
+        }
+    }
+}

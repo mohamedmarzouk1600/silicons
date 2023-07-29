@@ -1,0 +1,20 @@
+$menus['DummyCrudName'] = [
+    'permission'=> ['admin.DummyCrudName.index'],
+    'class'=>'',
+    'icon'=>'fa fa-cogs',
+    'text'=>__('DummyCrudName'),
+    'sub'=>[
+        'DummyCrudName'=> [
+            'icon'=>'fa fa-users',
+            'permission'=> 'admin.DummyCrudName.index',
+            'url'=> route('admin.DummyCrudName.index'),
+            'text'=> __('DummyCrudName'),
+        ],
+        'NewDummyCrudName'=> [
+            'icon'=>'fa fa-user-plus',
+            'permission'=> 'admin.DummyCrudName.create',
+            'url'=> route('admin.DummyCrudName.create'),
+            'text'=> __('New DummyCrudName'),
+        ],
+    ]
+];

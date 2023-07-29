@@ -1,0 +1,58 @@
+<?php
+/**
+ * @author Mohamed Marzouk <mohamedmarzouk1600@gmail.com>
+ * @Copyright Maximum Develop
+ * @FileCreated DummyDateTime
+ * @Contact https://www.linkedin.com/in/mohamed-marzouk-138158125
+ */
+
+namespace MaxDev\Services;
+use Illuminate\Support\Collection;
+use DummyModelNameSpace;
+ExtraUseClasses
+
+class DummyService
+{
+
+    /**
+     * @return Collection|null
+     * @author Mohamed Marzouk <mohamedmarzouk1600@gmail.com>
+     */
+    public function adminIndex()
+    {
+        return DummyModel::select(['id',DummyFillable]);
+    }
+
+    /**
+     * @param $data
+     * @return DummyModel
+     * @author Mohamed Marzouk <mohamedmarzouk1600@gmail.com>
+     */
+    public function adminCreate($data)
+    {
+        return DummyModel::create($data);
+    }
+
+    /**
+     * @param $data
+     * @param DummyModel $model
+     * @return bool
+     * @author Mohamed Marzouk <mohamedmarzouk1600@gmail.com>
+     */
+    public function adminUpdate($data, $model)
+    {
+        return $model->update($data);
+    }
+
+
+    /**
+     * @param DummyModel $model
+     * @return bool
+     * @author Mohamed Marzouk <mohamedmarzouk1600@gmail.com>
+     */
+    public function adminDelete($model)
+    {
+        return $model->delete();
+    }
+
+}

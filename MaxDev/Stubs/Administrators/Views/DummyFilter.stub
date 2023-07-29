@@ -1,0 +1,4 @@
+            if(isset($request->DummyFiledName) && $request->DummyFiledName){
+                $attr=$request->DummyFiledName;
+                $eloquentData->where('DummyClearedFiledName', 'LIKE', '%'.$attr.'%');
+            }

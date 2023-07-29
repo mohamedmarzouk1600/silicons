@@ -1,0 +1,15 @@
+
+
+.call-details-patient {
+    margin: 15px;
+    border: 1px solid #00a5a8;
+    border-top: 0;
+}
+
+.call-details-patient .call-details-patient-content {
+    padding: 10px
+}
+
+.call-details-patient .call-details-patient-content table {
+    margin-bottom: 0;
+}

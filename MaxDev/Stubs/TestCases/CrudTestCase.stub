@@ -1,0 +1,53 @@
+Test cases for DummyCrudName
+1. New DummyCrudName:
+    Can CREATE a DummyCrudName with all details including, DummyFillable using ‘DummyCrudName New’ form.
+    Adding a new DummyCrudName, the following steps can be followed:
+        DummyEnteringFillableSteps* Submit the form.
+
+    Checking the result:
+        The tester manually verifies if the DummyCrudName is displayed with all the details on the front end of the software application.
+        Tester executes the query in the MYSQL database server to check if the particular row is present
+
+2. View DummyCrudName
+    Can READ the details DummyFillable in ‘DummyCrudName show page’.
+    To check if the created entry is readable, the following steps can be followed:
+        1. Create some DummyCrudName with different input combinations through CREATE functionality.
+        2. Try searching for the DummyCrudName.
+
+    Checking the result:
+        * The tester manually verifies if the product details are correct.
+        * Tester compares the details with the ones saved in the database.
+
+3. Update DummyCrudName:
+    Can UPDATE the DummyFillable using ‘DummyFillable Edit’ form.
+    To edit or update existing entries, the following steps can be followed:
+        1. Create a DummyCrudName using CREATE functionality.
+        2. Edit different fields of the DummyCrudName, all or any of (DummyFillable).
+        3. Submit
+
+    Checking the result:
+        The tester manually verifies that the DummyCrudName details have changed
+        Tester executes MYSQL query and sees the details
+
+
+4. Delete DummyCrudName:
+    Can DELETE the DummyCrudName
+    To check the delete functionality, the following steps can be followed:
+        1. Create a DummyCrudName with CREATE functionality.
+        2. Delete the DummyCrudName.
+
+    Checking the result:
+
+        * The tester manually checks if the DummyCrudName is removed from the UI
+        * The tester manually checks the MySQL database and confirms that the corresponding row has been deleted.
+
+5. List DummyPluralsCrudName:
+    Can view list of DummyCrudName:
+    To check the list functionality, the following steps can be followed:
+        1. Create multiple DummyPluralsCrudName with CREATE functionality.
+        2. View the list page for DummyPluralsCrudName
+
+    Checking the result:
+
+        * The tester manually checks if the DummyPluralsCrudName list can show (DummyFillable) for each one on the UI
+        * The tester manually checks the MySQL database and confirms that the corresponding rows can be viewed.

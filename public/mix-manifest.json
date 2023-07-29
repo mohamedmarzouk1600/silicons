@@ -1,0 +1,12 @@
+{
+    "/dashboard/js/vendors.js": "/dashboard/js/vendors.js",
+    "/dashboard/js/stack.js": "/dashboard/js/stack.js",
+    "/dashboard/js/patient.js": "/dashboard/js/patient.js",
+    "/landing/compiled/css/main-en.css": "/landing/compiled/css/main-en.css",
+    "/landing/compiled/css/main-ar.css": "/landing/compiled/css/main-ar.css",
+    "/dashboard/js/custom.js": "/dashboard/js/custom.js",
+    "/portal/js/app.js": "/portal/js/app.js",
+    "/landing/compiled/js/vendors.js": "/landing/compiled/js/vendors.js",
+    "/landing/compiled/js/app-ar.js": "/landing/compiled/js/app-ar.js",
+    "/landing/compiled/js/app-en.js": "/landing/compiled/js/app-en.js"
+}

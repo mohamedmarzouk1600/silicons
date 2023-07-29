@@ -1,0 +1,29 @@
+
+.wizard-progress-bar li:after {
+    right: 220px;
+}
+
+.questions-nurse-content .question-type-options span:first-child {
+    padding-left: 20px;
+}
+
+.questions-nurse-content .question-type-options input + label {
+    padding-right: 5px;
+}
+
+#msform .action-button-previous {
+    margin: 10px 5px 10px 0;
+}
+
+.questions-nurse-content .question-type-text,
+.questions-patient-gp-flow-component .questions-patient-content .question-type-text {
+    padding: 5px 30px 0 0;
+}
+
+.container-img-content-clinic .card-body {
+    margin-right: 20px
+}
+
+.form-check-input {
+    margin-right: -0.25rem;
+  }

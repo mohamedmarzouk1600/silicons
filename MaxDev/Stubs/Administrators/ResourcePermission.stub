@@ -1,0 +1,14 @@
+    /*
+    * DummyCrudName
+    */
+    [
+        'name' => 'DummyCrudName',
+        'permissions' => [
+            'view-DummyCrudName'=>['admin.DummyCrudName.index'],
+            'add-DummyCrudName'=>['admin.DummyCrudName.create','admin.DummyCrudName.store'],
+            'view-one-DummyCrudName'=>['admin.DummyCrudName.show'],
+            'edit-DummyCrudName'=>['admin.DummyCrudName.edit','admin.DummyCrudName.update'],
+            'delete-DummyCrudName'=>['admin.DummyCrudName.destroy'],
+        ]
+    ],
+

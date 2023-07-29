@@ -1,0 +1,240 @@
+
+.question {
+    line-height: 1;
+    display: inline-flex;
+}
+
+.card-show-blade .timeline {
+    padding-bottom: 0;
+}
+
+.card-show-blade table.table-bordered {
+    margin-bottom: 0
+}
+
+.patient-files .create-patient-file, .patient-notifications .create-patient-notification,
+.customer-support-case .create-customer-support-case, .patient-transactions .create-patient-transaction,
+.patient-readings .create-patient-reading, .patient-subscriptions .create-patient-subscriptions {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+.patient-files button.btn-create-patient-file, .patient-notifications button.btn-create-patient-notification,
+.customer-support-case .btn-create-customer-support-case, .patient-transactions .btn-create-transaction,
+.patient-readings button.btn-create-patient-reading, .patient-subscriptions button.btn-create-subscriptions {
+    font-size: 17px;
+    background: #21a49c !important;
+    border-color: #21a49c !important;
+}
+
+.patient-files .pop-up-model-form-patient-file, .patient-notifications .pop-up-model-form-patient-notification,
+.customer-support-case .model-customer-support-case, .model-update-details-case, .patient-transactions .pop-up-model-form-transaction,
+.patient-readings .pop-up-model-form-patient-reading, .patient-subscriptions .pop-up-model-form-subscriptions {
+    position: absolute;
+    top: 26%;
+    background: #d8dbe0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #404e67;
+    display: none
+}
+
+.model-update-details-case {
+    width: 65%;
+    top: 0;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.patient-transactions .pop-up-model-form-transaction {
+    width: 35%;
+    left: 25%;
+}
+
+.patient-subscriptions .pop-up-model-form-subscriptions {
+    width: 35%;
+    left: 30%;
+    top: 10%
+}
+
+.patient-files .pop-up-model-form-patient-file {
+    left: 23%;
+}
+
+.patient-readings .pop-up-model-form-patient-reading {
+    max-height: 65%;
+    left: 15%;
+    overflow-y: auto;
+    top: 13%;
+    width: 70%;
+    min-height: 15%;
+    padding-bottom: 0
+}
+
+.patient-notifications .pop-up-model-form-patient-notification, .customer-support-case .model-customer-support-case {
+    left: 10%;
+}
+
+.model-update-details-case {
+    left: 14%;
+}
+
+.model-update-details-case .icon-close-update-details-case i {
+    cursor: pointer;
+}
+
+.pop-up-model-form-patient-file .icon-close-form-patient-file, .pop-up-model-form-patient-notification .icon-close-form-patient-notification,
+.customer-support-case .icon-close-customer-support-case, .model-update-details-case .icon-close-update-details-case,
+.patient-transactions .pop-up-model-form-transaction .icon-close-form-transaction, .pop-up-model-form-patient-reading .icon-close-form-patient-reading,
+.patient-subscriptions .pop-up-model-form-subscriptions .icon-close-form-subscriptions {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.pop-up-model-form-patient-file .icon-close-form-patient-file i, .pop-up-model-form-patient-notification .icon-close-form-patient-notification i,
+.customer-support-case .icon-close-customer-support-case i, .model-update-details-case .icon-close-update-details-case i,
+.patient-transactions .pop-up-model-form-transaction .icon-close-form-transaction i, .pop-up-model-form-patient-reading .icon-close-form-patient-reading i,
+.patient-subscriptions .pop-up-model-form-subscriptions .icon-close-form-subscriptions i {
+    padding: 5px;
+    border-radius: 5px;
+    background: #00000091;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.pop-up-model-form-patient-file .submit-btn-form-patient, .pop-up-model-form-patient-notification .submit-btn-form-patient-notification,
+.customer-support-case .submit-btn-form-patient, .patient-transactions .submit-btn-form-patient-transaction, .pop-up-model-form-patient-reading .submit-btn-form-patient,
+.patient-subscriptions .pop-up-model-form-subscriptions .submit-btn-form-patient-subscriptions{
+    background: #0000008c !important;
+    border-color: #000000 !important;
+    font-size: 15px;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+.pop-up-model-form-patient-file .custom-error-message, .pop-up-model-form-patient-notification .custom-error-message, .pop-up-model-form-patient-reading .custom-error-message,
+.patient-subscriptions .custom-error-message {
+    font-size: 13px;
+}
+
+.save_update_media_profile {
+    background: #21a59d;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 5px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.change-status-fieldset {
+    border: 1px solid #00a5a8 !important;
+    margin: 0 2px 25px !important;
+    padding: 1em !important;
+    background: #e5e6e6;
+}
+
+.change-status-fieldset legend {
+    color: #00b5b8;
+    font-weight: bold;
+    padding: 4px 10px;
+    background: #FFF;
+    width: 17%;
+    font-size: 16px;
+}
+
+.btn-from-logo {
+    border-color: #00a5a8 !important;
+    background-color: #00a5a8 !important;
+}
+
+.case-update-status .submit-btn-case-change-status {
+    margin-top: 25%
+}
+
+.current-status-fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    border: 1px solid #00a5a8 !important;
+    margin: 0 2px !important;
+    padding: 1em !important;
+    background: #e5e6e6;
+    text-align: center;
+}
+
+.current-status-fieldset legend {
+    font-size: 14px;
+    width: 60%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    color: #00b5b8;
+    font-weight: bold;
+    padding: 4px 10px;
+    background: #FFF;
+}
+
+.case-title-fieldset legend {
+    width: 55px
+}
+
+.case-description-fieldset legend {
+    width: 13%
+}
+
+.case-comments-fieldset legend {
+    width: 106px
+}
+
+.case-comments-data {
+    text-align: center
+}
+
+.comment-attachment {
+    background: #21a49c !important;
+    color: #FFF !important;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.patient-medical-profile textarea {
+    resize: none;
+}
+
+.patient-show-blade .model-btn-content {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+.patient-show-blade .btn-open-model {
+    font-size: 17px;
+    background: #21a49c !important;
+    border-color: #21a49c !important;
+}
+
+.patient-show-blade .modal-header button {
+    padding: 5px;
+    border-radius: 5px;
+    background: #008385;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #008385;
+}
+
+.patient-show-blade .alert-danger {
+    display: none;
+}
+
+.patient-show-blade .model-form-show-patient i.fa-spinner {
+    display: none;
+}

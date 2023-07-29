@@ -1,0 +1,36 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.local
+.env.production
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/.idea
+.phpstorm.meta.php
+_ide_helper.php
+/tmp
+# /public/dashboard/
+/public/fonts/
+/public/images/
+resources/sass
+tests/TestCases.md
+/tools
+.php-cs-fixer.cache
+
+public/portal/css/app.css
+public/portal/js/app.js
+
+.elasticbeanstalk/
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+storage/media-library

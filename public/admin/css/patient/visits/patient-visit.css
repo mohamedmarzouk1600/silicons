@@ -1,0 +1,146 @@
+
+
+.call-details-patient {
+    margin: 15px;
+    border: 1px solid #00a5a8;
+    border-top: 0;
+}
+
+.call-details-patient .call-details-patient-content {
+    padding: 10px
+}
+
+.call-details-patient .call-details-patient-content table {
+    margin-bottom: 0;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+    width: 70vh !important
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__rendered,
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    max-width: 70vh !important;
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice,
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    padding: 5px 10px !important;
+    margin-top: 5px !important;
+}
+
+.recommendations-patient-gp-flow-component .recommendation-content {
+    margin: 20px
+}
+
+.recommendations-patient-gp-flow-component .action-button-next, .recommendations-patient-gp-flow-component .action-button-previous {
+    background: #00B5B8;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 5px;
+    width: 100%
+}
+
+.gp-flow-patient-component .question-type-long-text {
+    padding: 5px 0 0 30px;
+}
+
+.gp-flow-patient-component .question-type-long-text textarea {
+    height: 100px;
+    resize: none;
+}
+
+.card.card-show-blade .visits-patients {
+    margin: 10px;
+    border: 2px solid #21a59d;
+    border-top: 0;
+}
+
+.card.card-show-blade .tab-content {
+    background: #e5e5e5;
+    margin: 5px;
+}
+
+.card.card-show-blade .table.table-dark {
+    font-size: 20px
+}
+
+.card.card-show-blade .table-dark {
+    color: #fff;
+    background-color: #279392;
+}
+
+.bg-red.bg-lighten-2 {
+    background: #259995 !important
+}
+
+.action-buttons-recommendation {
+    display: flex;
+}
+
+.gp-flow-patient-component .action-buttons-recommendation {
+    margin-top: 15px;
+}
+
+.gp-flow-patient-component .action-buttons-recommendation .action-button-previous {
+    background: #ff7588;
+    margin-right: 15px;
+}
+
+.questions-nurse-content .question-type-options input + label,
+.questions-patient-gp-flow-component .questions-patient-content .question-type-options input + label {
+    padding-right: 10px;
+}
+
+
+.questions-patient-gp-flow-component .diagnosis-gp {
+    border: 1px solid #00a5a8 !important;
+    margin: 0 2px !important;
+    padding: 1em !important;
+    background: #e5e6e6;
+}
+
+.questions-patient-gp-flow-component .diagnosis-gp legend {
+    color: #00b5b8;
+    font-weight: bold;
+    padding: 0 10px;
+    background: #FFF;
+    width: 155px;
+}
+
+.questions-patient-gp-flow-component .diagnosis-gp .diagnosis-text, .questions-patient-gp-flow-component .diagnosis-gp .diagnosis-text-last {
+    padding-left: 10px;
+}
+
+.questions-patient-gp-flow-component .diagnosis-gp .diagnosis-text textarea, .questions-patient-gp-flow-component .diagnosis-gp .diagnosis-text-last textarea {
+    height: 100px;
+    resize: none;
+}
+
+.questions-patient-gp-flow-component .diagnosis-gp .diagnosis-text textarea {
+    margin-bottom: 25px;
+}
+
+.questions-patient-gp-flow-component .diagnosis-gp .diagnosis-heading {
+    margin-bottom: 15px
+}
+
+.questions-patient-gp-flow-component .diagnosis-gp .diagnosis-finalized {
+    display: flex;
+    margin-left: 5px;
+    margin-top: 15px
+}
+
+.questions-patient-gp-flow-component .diagnosis-gp .diagnosis-finalized input {
+    transform: scale(1.5);
+    margin-right: 10px
+}
+
+.questions-patient-gp-flow-component .diagnosis-gp .diagnosis-finalized label {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 16px
+}

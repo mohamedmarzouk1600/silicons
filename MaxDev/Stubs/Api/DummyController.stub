@@ -1,0 +1,45 @@
+<?php
+/**
+ * @author Mohamed Marzouk <mohamedmarzouk1600@gmail.com>
+ * @Copyright Maximum Develop
+ * @FileCreated DummyDateTime
+ * @Contact https://www.linkedin.com/in/mohamed-marzouk-138158125
+ */
+
+namespace MaxDev\Modules\Api;
+
+use MaxDev\Modules\APIController;
+use Illuminate\Http\Request;
+use DummyModelNameSpace;
+use MaxDev\Modules\Api\Requests\DummyFormRequest;
+use Spatie\QueryBuilder\QueryBuilder;
+use MaxDev\Modules\Api\Resource\DummyResource;
+ExtraUseClasses
+
+class DummyController extends APIController
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index(DummyFormRequest $request)
+    {
+        $DummyLoweredModel = QueryBuilder::for(DummyModel::class)
+            ->allowedFilters([DummyAllowedFilters])
+            ->paginate(15);
+        return DummyResource::collection($DummyLoweredModel);
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  \MaxDev\Models\DummyModel  $DummyLoweredModel
+     * @return \Illuminate\Http\Response
+     */
+    public function show(DummyModel $DummyLoweredModel)
+    {
+        return new DummyResource($DummyLoweredModel);
+    }
+
+}
